@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E8C607068FA87CED2E2780C /* Pods_GeoLocationUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46AF15C2E19E20FCDE1D835A /* Pods_GeoLocationUITests.framework */; };
+		4E0900D5230BB2FC0042CE2C /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0900D4230BB2FC0042CE2C /* CustomMapView.swift */; };
+		4E0900D7230BB3CB0042CE2C /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0900D6230BB3CB0042CE2C /* LocationManager.swift */; };
+		4E0900D9230BB4FE0042CE2C /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0900D8230BB4FE0042CE2C /* AlertManager.swift */; };
+		4EAC6833230BB085009D8015 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC6832230BB085009D8015 /* AppDelegate.swift */; };
+		4EAC6835230BB085009D8015 /* TrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC6834230BB085009D8015 /* TrackingViewController.swift */; };
+		4EAC6838230BB085009D8015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EAC6836230BB085009D8015 /* Main.storyboard */; };
+		4EAC683B230BB085009D8015 /* GeoLocation.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC6839230BB085009D8015 /* GeoLocation.xcdatamodeld */; };
+		4EAC683D230BB087009D8015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EAC683C230BB087009D8015 /* Assets.xcassets */; };
+		4EAC6840230BB087009D8015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EAC683E230BB087009D8015 /* LaunchScreen.storyboard */; };
+		4EAC684B230BB088009D8015 /* GeoLocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC684A230BB088009D8015 /* GeoLocationTests.swift */; };
+		4EAC6856230BB088009D8015 /* GeoLocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EAC6855230BB088009D8015 /* GeoLocationUITests.swift */; };
+		B89BAAC574E657F600D9D551 /* Pods_GeoLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989842253D381B4D6AFFF8A /* Pods_GeoLocation.framework */; };
+		C43BF7E8F59960E1AD776078 /* Pods_GeoLocationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D20549AB4F89D9CABCAFAC3 /* Pods_GeoLocationTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4EAC6847230BB088009D8015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EAC6827230BB085009D8015 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EAC682E230BB085009D8015;
+			remoteInfo = GeoLocation;
+		};
+		4EAC6852230BB088009D8015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4EAC6827230BB085009D8015 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4EAC682E230BB085009D8015;
+			remoteInfo = GeoLocation;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03EB430D1055612A6AC66D86 /* Pods-GeoLocationUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLocationUITests.release.xcconfig"; path = "Target Support Files/Pods-GeoLocationUITests/Pods-GeoLocationUITests.release.xcconfig"; sourceTree = "<group>"; };
+		42230917180772A91E237782 /* Pods-GeoLocationUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLocationUITests.debug.xcconfig"; path = "Target Support Files/Pods-GeoLocationUITests/Pods-GeoLocationUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		46AF15C2E19E20FCDE1D835A /* Pods_GeoLocationUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoLocationUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E0900D4230BB2FC0042CE2C /* CustomMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
+		4E0900D6230BB3CB0042CE2C /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		4E0900D8230BB4FE0042CE2C /* AlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		4EAC682F230BB085009D8015 /* GeoLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EAC6832230BB085009D8015 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4EAC6834230BB085009D8015 /* TrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewController.swift; sourceTree = "<group>"; };
+		4EAC6837230BB085009D8015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4EAC683A230BB085009D8015 /* GeoLocation.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GeoLocation.xcdatamodel; sourceTree = "<group>"; };
+		4EAC683C230BB087009D8015 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4EAC683F230BB087009D8015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4EAC6841230BB087009D8015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EAC6846230BB088009D8015 /* GeoLocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoLocationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EAC684A230BB088009D8015 /* GeoLocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationTests.swift; sourceTree = "<group>"; };
+		4EAC684C230BB088009D8015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EAC6851230BB088009D8015 /* GeoLocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeoLocationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EAC6855230BB088009D8015 /* GeoLocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocationUITests.swift; sourceTree = "<group>"; };
+		4EAC6857230BB088009D8015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D474F9A570CD25683FC2624 /* Pods-GeoLocationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLocationTests.release.xcconfig"; path = "Target Support Files/Pods-GeoLocationTests/Pods-GeoLocationTests.release.xcconfig"; sourceTree = "<group>"; };
+		777E882CBCAAC1633D7356EB /* Pods-GeoLocation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLocation.debug.xcconfig"; path = "Target Support Files/Pods-GeoLocation/Pods-GeoLocation.debug.xcconfig"; sourceTree = "<group>"; };
+		8D20549AB4F89D9CABCAFAC3 /* Pods_GeoLocationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoLocationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A71279B958EE8860E2D3203 /* Pods-GeoLocation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLocation.release.xcconfig"; path = "Target Support Files/Pods-GeoLocation/Pods-GeoLocation.release.xcconfig"; sourceTree = "<group>"; };
+		A989842253D381B4D6AFFF8A /* Pods_GeoLocation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoLocation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE2322AB7208AAAC481FA7FF /* Pods-GeoLocationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoLocationTests.debug.xcconfig"; path = "Target Support Files/Pods-GeoLocationTests/Pods-GeoLocationTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4EAC682C230BB085009D8015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B89BAAC574E657F600D9D551 /* Pods_GeoLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EAC6843230BB088009D8015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C43BF7E8F59960E1AD776078 /* Pods_GeoLocationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EAC684E230BB088009D8015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E8C607068FA87CED2E2780C /* Pods_GeoLocationUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E0900DA230BB8B60042CE2C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4EAC6832230BB085009D8015 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4E0900DB230BB8C30042CE2C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4E0900D8230BB4FE0042CE2C /* AlertManager.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		4E0900DC230BB8CE0042CE2C /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				4E0900D4230BB2FC0042CE2C /* CustomMapView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		4E0900DD230BB8DB0042CE2C /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				4E0900D6230BB3CB0042CE2C /* LocationManager.swift */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		4E0900DE230BB8EA0042CE2C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4EAC6834230BB085009D8015 /* TrackingViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4EAC6826230BB085009D8015 = {
+			isa = PBXGroup;
+			children = (
+				4EAC6831230BB085009D8015 /* GeoLocation */,
+				4EAC6849230BB088009D8015 /* GeoLocationTests */,
+				4EAC6854230BB088009D8015 /* GeoLocationUITests */,
+				4EAC6830230BB085009D8015 /* Products */,
+				8E12D95E118FF0B2129562E2 /* Pods */,
+				9B1E9F9F000DB695438ACABE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4EAC6830230BB085009D8015 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4EAC682F230BB085009D8015 /* GeoLocation.app */,
+				4EAC6846230BB088009D8015 /* GeoLocationTests.xctest */,
+				4EAC6851230BB088009D8015 /* GeoLocationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4EAC6831230BB085009D8015 /* GeoLocation */ = {
+			isa = PBXGroup;
+			children = (
+				4E0900DA230BB8B60042CE2C /* Application */,
+				4E0900DE230BB8EA0042CE2C /* Controllers */,
+				4E0900DD230BB8DB0042CE2C /* Stores */,
+				4E0900DC230BB8CE0042CE2C /* Custom */,
+				4E0900DB230BB8C30042CE2C /* Categories */,
+				4EAC6836230BB085009D8015 /* Main.storyboard */,
+				4EAC683C230BB087009D8015 /* Assets.xcassets */,
+				4EAC683E230BB087009D8015 /* LaunchScreen.storyboard */,
+				4EAC6841230BB087009D8015 /* Info.plist */,
+				4EAC6839230BB085009D8015 /* GeoLocation.xcdatamodeld */,
+			);
+			path = GeoLocation;
+			sourceTree = "<group>";
+		};
+		4EAC6849230BB088009D8015 /* GeoLocationTests */ = {
+			isa = PBXGroup;
+			children = (
+				4EAC684A230BB088009D8015 /* GeoLocationTests.swift */,
+				4EAC684C230BB088009D8015 /* Info.plist */,
+			);
+			path = GeoLocationTests;
+			sourceTree = "<group>";
+		};
+		4EAC6854230BB088009D8015 /* GeoLocationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4EAC6855230BB088009D8015 /* GeoLocationUITests.swift */,
+				4EAC6857230BB088009D8015 /* Info.plist */,
+			);
+			path = GeoLocationUITests;
+			sourceTree = "<group>";
+		};
+		8E12D95E118FF0B2129562E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				777E882CBCAAC1633D7356EB /* Pods-GeoLocation.debug.xcconfig */,
+				9A71279B958EE8860E2D3203 /* Pods-GeoLocation.release.xcconfig */,
+				FE2322AB7208AAAC481FA7FF /* Pods-GeoLocationTests.debug.xcconfig */,
+				6D474F9A570CD25683FC2624 /* Pods-GeoLocationTests.release.xcconfig */,
+				42230917180772A91E237782 /* Pods-GeoLocationUITests.debug.xcconfig */,
+				03EB430D1055612A6AC66D86 /* Pods-GeoLocationUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9B1E9F9F000DB695438ACABE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A989842253D381B4D6AFFF8A /* Pods_GeoLocation.framework */,
+				8D20549AB4F89D9CABCAFAC3 /* Pods_GeoLocationTests.framework */,
+				46AF15C2E19E20FCDE1D835A /* Pods_GeoLocationUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4EAC682E230BB085009D8015 /* GeoLocation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EAC685A230BB088009D8015 /* Build configuration list for PBXNativeTarget "GeoLocation" */;
+			buildPhases = (
+				D086F82D9A3972DDCE80C3E2 /* [CP] Check Pods Manifest.lock */,
+				4EAC682B230BB085009D8015 /* Sources */,
+				4EAC682C230BB085009D8015 /* Frameworks */,
+				4EAC682D230BB085009D8015 /* Resources */,
+				3126B28A947FD10CA459AF6C /* [CP] Copy Pods Resources */,
+				BB08724F77085C4075EED394 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoLocation;
+			productName = GeoLocation;
+			productReference = 4EAC682F230BB085009D8015 /* GeoLocation.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4EAC6845230BB088009D8015 /* GeoLocationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EAC685D230BB088009D8015 /* Build configuration list for PBXNativeTarget "GeoLocationTests" */;
+			buildPhases = (
+				F90C5D8ACFC8A0DB89E50B13 /* [CP] Check Pods Manifest.lock */,
+				4EAC6842230BB088009D8015 /* Sources */,
+				4EAC6843230BB088009D8015 /* Frameworks */,
+				4EAC6844230BB088009D8015 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EAC6848230BB088009D8015 /* PBXTargetDependency */,
+			);
+			name = GeoLocationTests;
+			productName = GeoLocationTests;
+			productReference = 4EAC6846230BB088009D8015 /* GeoLocationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4EAC6850230BB088009D8015 /* GeoLocationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EAC6860230BB088009D8015 /* Build configuration list for PBXNativeTarget "GeoLocationUITests" */;
+			buildPhases = (
+				42F18B8F845B39190E37A50E /* [CP] Check Pods Manifest.lock */,
+				4EAC684D230BB088009D8015 /* Sources */,
+				4EAC684E230BB088009D8015 /* Frameworks */,
+				4EAC684F230BB088009D8015 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4EAC6853230BB088009D8015 /* PBXTargetDependency */,
+			);
+			name = GeoLocationUITests;
+			productName = GeoLocationUITests;
+			productReference = 4EAC6851230BB088009D8015 /* GeoLocationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4EAC6827230BB085009D8015 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = "Naina Ghormare";
+				TargetAttributes = {
+					4EAC682E230BB085009D8015 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					4EAC6845230BB088009D8015 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 4EAC682E230BB085009D8015;
+					};
+					4EAC6850230BB088009D8015 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 4EAC682E230BB085009D8015;
+					};
+				};
+			};
+			buildConfigurationList = 4EAC682A230BB085009D8015 /* Build configuration list for PBXProject "GeoLocation" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4EAC6826230BB085009D8015;
+			productRefGroup = 4EAC6830230BB085009D8015 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4EAC682E230BB085009D8015 /* GeoLocation */,
+				4EAC6845230BB088009D8015 /* GeoLocationTests */,
+				4EAC6850230BB088009D8015 /* GeoLocationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4EAC682D230BB085009D8015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EAC6840230BB087009D8015 /* LaunchScreen.storyboard in Resources */,
+				4EAC683D230BB087009D8015 /* Assets.xcassets in Resources */,
+				4EAC6838230BB085009D8015 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EAC6844230BB088009D8015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EAC684F230BB088009D8015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3126B28A947FD10CA459AF6C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoLocation/Pods-GeoLocation-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoLocation/Pods-GeoLocation-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoLocation/Pods-GeoLocation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42F18B8F845B39190E37A50E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoLocationUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB08724F77085C4075EED394 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoLocation/Pods-GeoLocation-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoLocation/Pods-GeoLocation-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoLocation/Pods-GeoLocation-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D086F82D9A3972DDCE80C3E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoLocation-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F90C5D8ACFC8A0DB89E50B13 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoLocationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4EAC682B230BB085009D8015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EAC6835230BB085009D8015 /* TrackingViewController.swift in Sources */,
+				4EAC683B230BB085009D8015 /* GeoLocation.xcdatamodeld in Sources */,
+				4E0900D9230BB4FE0042CE2C /* AlertManager.swift in Sources */,
+				4E0900D7230BB3CB0042CE2C /* LocationManager.swift in Sources */,
+				4E0900D5230BB2FC0042CE2C /* CustomMapView.swift in Sources */,
+				4EAC6833230BB085009D8015 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EAC6842230BB088009D8015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EAC684B230BB088009D8015 /* GeoLocationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4EAC684D230BB088009D8015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EAC6856230BB088009D8015 /* GeoLocationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4EAC6848230BB088009D8015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EAC682E230BB085009D8015 /* GeoLocation */;
+			targetProxy = 4EAC6847230BB088009D8015 /* PBXContainerItemProxy */;
+		};
+		4EAC6853230BB088009D8015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4EAC682E230BB085009D8015 /* GeoLocation */;
+			targetProxy = 4EAC6852230BB088009D8015 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4EAC6836230BB085009D8015 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EAC6837230BB085009D8015 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4EAC683E230BB087009D8015 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4EAC683F230BB087009D8015 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4EAC6858230BB088009D8015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4EAC6859230BB088009D8015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4EAC685B230BB088009D8015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 777E882CBCAAC1633D7356EB /* Pods-GeoLocation.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33P3VUARHV;
+				INFOPLIST_FILE = GeoLocation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smartData.GeoLocation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4EAC685C230BB088009D8015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A71279B958EE8860E2D3203 /* Pods-GeoLocation.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33P3VUARHV;
+				INFOPLIST_FILE = GeoLocation/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smartData.GeoLocation;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4EAC685E230BB088009D8015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE2322AB7208AAAC481FA7FF /* Pods-GeoLocationTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33P3VUARHV;
+				INFOPLIST_FILE = GeoLocationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smartData.GeoLocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoLocation.app/GeoLocation";
+			};
+			name = Debug;
+		};
+		4EAC685F230BB088009D8015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D474F9A570CD25683FC2624 /* Pods-GeoLocationTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33P3VUARHV;
+				INFOPLIST_FILE = GeoLocationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smartData.GeoLocationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeoLocation.app/GeoLocation";
+			};
+			name = Release;
+		};
+		4EAC6861230BB088009D8015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42230917180772A91E237782 /* Pods-GeoLocationUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33P3VUARHV;
+				INFOPLIST_FILE = GeoLocationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smartData.GeoLocationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoLocation;
+			};
+			name = Debug;
+		};
+		4EAC6862230BB088009D8015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03EB430D1055612A6AC66D86 /* Pods-GeoLocationUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 33P3VUARHV;
+				INFOPLIST_FILE = GeoLocationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = smartData.GeoLocationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeoLocation;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4EAC682A230BB085009D8015 /* Build configuration list for PBXProject "GeoLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EAC6858230BB088009D8015 /* Debug */,
+				4EAC6859230BB088009D8015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EAC685A230BB088009D8015 /* Build configuration list for PBXNativeTarget "GeoLocation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EAC685B230BB088009D8015 /* Debug */,
+				4EAC685C230BB088009D8015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EAC685D230BB088009D8015 /* Build configuration list for PBXNativeTarget "GeoLocationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EAC685E230BB088009D8015 /* Debug */,
+				4EAC685F230BB088009D8015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4EAC6860230BB088009D8015 /* Build configuration list for PBXNativeTarget "GeoLocationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EAC6861230BB088009D8015 /* Debug */,
+				4EAC6862230BB088009D8015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4EAC6839230BB085009D8015 /* GeoLocation.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4EAC683A230BB085009D8015 /* GeoLocation.xcdatamodel */,
+			);
+			currentVersion = 4EAC683A230BB085009D8015 /* GeoLocation.xcdatamodel */;
+			path = GeoLocation.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4EAC6827230BB085009D8015 /* Project object */;
+}
